@@ -1,7 +1,7 @@
 services:
   devops:
     build: .
-    image: devops:latest
+    image: ghcr.io/olgaarenas22/iwvg-devops:latest
     restart: always
     ports:
       - "8080:8080"
