@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Lowercase repository name
         run: echo "REPOSITORY=$(echo '${{ github.repository }}' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+      - name: ⬇️ Checkout repository
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
